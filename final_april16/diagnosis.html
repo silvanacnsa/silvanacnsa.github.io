@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Midterm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="diagnosis.html">Diagnosis</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="page2_section1">
+            <h1>Your diagnosis is...?</h1>
+            <div class="marquee">
+                <div class="marquee--inner">
+                    <div class="content">
+                        <div>
+                            <h6>ADHD? Fever? Hyperhydrosis? Measles? Ringworm? Herpes? Diabetes? Lupus?
+                                Parasites?
+                                Psoriasis? Chronic Fatigue? Meningitis? ADHD? Fever? Hyperhydrosis? Measles? Ringworm?
+                                Herpes? Diabetes? Lupus?
+                                Parasites?
+                                Psoriasis? Chronic Fatigue? Meningitis? ADHD? Fever? Hyperhydrosis? Measles? Ringworm?
+                                Herpes? Diabetes? Lupus?
+                                Parasites?
+                                Psoriasis? Chronic Fatigue? Meningitis? ADHD? Fever? Hyperhydrosis? Measles? Ringworm?
+                                Herpes? Diabetes? Lupus?
+                                Parasites?
+                                Psoriasis? Chronic Fatigue? Meningitis?</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-group">
+                <div class="text-group">
+                    <h2>Your virtual health adventure awaits</h2>
+                    <p>Change your mind? Feeling a bit jittery about exploring your potential ailments? No worries! If
+                        you've had a change of heart and prefer to steer clear of our symptom exploration, feel free to
+                        leave.</p>
+                </div>
+                <div class="big-button">
+                    <a href="index.html" class="blue-button">I Changed My Mind</a>
+                </div>
+            </div>
+        </div>
+        <div class="page2_section2">
+            <hgroup>
+                <h1>1.</h1>
+                <h6>Your passport to exploring the vast landscape of health scenarios! Tailor your exploration to your comfort level with our carefully curated categories.</h6>
+            </hgroup>
+            <!-- ACCORDION CODE FROM CODEPEN -->
+            <section class="accordion">
+                <input type="checkbox" name="collapse" id="handle1">
+                <div class="handle">
+                    <label for="handle1">
+                        <h4>Manageable</h4>
+                    </label>
+                    <p>Uncover the charm of everyday quirks. These manageable diagnoses add a little eccentricity
+                        without
+                        disrupting your routine.</p>
+                </div>
+                <div class="content">
+                    <p class="accordion-text">It seems you may have a minor anxiety disorder, but don't fret, everyone has one these days! This is pretty easy to deal with if you manage to jump through all the hoops it takes to get your hands on a prescription!</p>
+                </div>
+            </section>
+            <section class="accordion">
+                <input type="checkbox" name="collapse" id="handle2">
+                <div class="handle">
+                    <label for="handle2">
+                        <h4>Concerning</h4>
+                    </label>
+                    <p>Ready for a bit more intrigue? Delve into symptoms that may raise an eyebrow, providing a touch
+                        of drama to your everyday life.</p>
+                </div>
+                <div class="content">
+                    <p class="accordion-text">Sounds like you have GERD (gastroesophageal reflux disease), so your stomach acid might be destroying the lining on your esophagus. Nothing some TUMS can't fix though.</p>
+                </div>
+            </section>
+            <section class="accordion">
+                <input type="checkbox" name="collapse" id="handle3">
+                <div class="handle">
+                    <label for="handle3">
+                        <h4>Life-altering</h4>
+                    </label>
+                    <p>Brace yourself for a diagnosis that might make you rethink your daily habits. This category adds
+                        a twist to the ordinary.</p>
+                </div>
+                <div class="content">
+                    <p class="accordion-text">There's a possible chance you have rheumatoid arthritis, depending on your age this can be a complete shock or an expected guest.</p>
+                </div>
+            </section>
+            <section class="accordion">
+                <input type="checkbox" name="collapse" id="handle4">
+                <div class="handle">
+                    <label for="handle4">
+                        <h4>Terminal</h4>
+                    </label>
+                    <p>Choose this option if you're prepared for a journey into the absurd. </p>
+                </div>
+                <div class="content">
+                    <p class="accordion-text">DISCLAIMER! DISCLAIMER! DISCLAIMER!
+                    </p>
+                    <p class="accordion-text">As a user of this site you agree to the terms that At Home Clinic is not a healthcare professional or provider. Content should not be mistaken for legitimate medical advice. At Home Clinic is absolved of all legal liabilities, responsibilities, and obligations related to your perception, interpretation, or misinterpretation of the information provided on this website. We are not liable for any legal claims, demands, or damages that may or may not result from your virtual health exploration. 
+                        
+                        
+                        <strong>In short, we're not responsible for anything.</strong></p>
+                    <p class="accordion-text">Anyways... You know that disease or illness that keeps you up at night thinking about how much anguish it would cause you and your loved ones? Yeah, it might be that. </p>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+    <!-- load the external locomotive js file first -->
+    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+    <!-- then our file to initialize the script. Make sure it exists in the folder we're referencing -->
+    <script src="js/locomotive.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <!-- JS LINK -->
+
+    <script type="text/javascript" src="/js/scroll.js"></script>
+</body>
+
+</html>
